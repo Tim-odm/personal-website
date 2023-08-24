@@ -53,11 +53,3 @@ body {
   background-color: black;
   transition: .5s;
 }
-
-.header {
-  height: 1000px;
-}
-
-.main {
-  margin-top: 80px;
-}

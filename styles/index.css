@@ -1,0 +1,43 @@
+.main {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .projects-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.main .panel {
+  width: 370px;
+  height: 600px;
+  padding: 8px 20px;
+  border: 2px solid whitesmoke;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .panel h3 {
+  align-self: center;
+}
+
+.main .panel p {
+  text-align: justify;
+}
+
+.main .panel a,.main .panel em {
+  text-decoration: none;
+  color: gray;
+}
+
+.main .panel img {
+  margin-top: 28px;
+  width: 300px;
+  height: 200px;
+  align-self: center;
+}
