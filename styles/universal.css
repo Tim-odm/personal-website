@@ -1,6 +1,6 @@
 * {
   color: aliceblue;
-  font-family: "Arial";
+  font-family: 'DM Sans', Sans-serif;
   box-sizing: border-box;
 }
 
@@ -13,66 +13,51 @@ body {
   background-color: rgb(54, 53, 60);
   height: 70px;
   border-bottom: 1px solid white;
-  box-shadow: 4px;
+  padding: 0 100px 0 32px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-.nav-bar div.name-bar{
-  margin: 0;
-  flex-grow: 2;
-  flex-basis: 200px;
+.nav-bar div {
+  display: flex;
+  align-items: center;
 }
 
-.name-bar a {
+.nav-bar a {
   text-decoration: none;
 }
 
-.nav-bar div h3 {
+.nav-bar .name-bar h3 {
   font-size: 22px;
-  margin: 12px 0 0 0;
-  padding: 12px 16px;
-}
-
-.nav-bar div.list-items {
-  padding: 0px 0px;
-  flex-grow: 1;
-}
-
-li {
-  float: left;
-}
-
-div.nav-bar div.list-items a {
-  margin-top: 12px;
-  border-radius: 24px;
-  display: block;
-  font-size: 18px;
-  padding: 12px 24px 12px 24px;
-  text-decoration: none;
-}
-
-div.nav-bar div.list-items a:hover {
-  background-color: black;
-  transition: .5s;
 }
 
 .nav-bar ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-bar .list-items .text-item {
+  border-radius: 24px;
+  font-size: 18px;
+  padding: 12px 24px;
+}
+
+.nav-bar .list-items .text-item:hover {
+  background-color: black;
+  transition: .5s;
 }
 
 .header {
   height: 1000px;
 }
 
-div.main {
-  margin: 80px 0 0 0;
+.main {
+  margin-top: 80px;
 }
