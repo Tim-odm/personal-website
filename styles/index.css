@@ -14,12 +14,13 @@
 
 .main .panel {
   width: 370px;
-  height: 600px;
+  height: 650px;
   padding: 8px 20px;
   border: 2px solid whitesmoke;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
+  box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.547);
 }
 
 .main .panel h3 {
