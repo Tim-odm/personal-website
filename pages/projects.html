@@ -1,44 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,
-  9..40,400;0,9..40,700;1,9..40,400;1,9..40,700&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/universal.css">
-  <title>Home Page</title>
-</head>
-<body>
-  
-  <!-- Navigation bar -->
-  <div class="nav-bar">
-    <div class="name-bar">
-      <h3><a href="./index.html">Timothy Makoni</a></h3>
-    </div>
-    <div class="list-items">
-      <ul>
-        <li class="nav-bar-list"><a class="text-item" href="./projects.html">Projects</a></li>
-        <li class="nav-bar-list"><a class="text-item" href="./about-me.html">About me</a></li>
-        <li class="nav-bar-list"><a class="text-item" href="./contact-me.html">Contact me</a></li>
-        <li style="margin-left: 8px;">
-          <a href="https://github.com/Tim-odm">
-            <i class="fa fa-github" style="font-size: 32px; border-radius: 50%;"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  <head>
+    <!-- Links to github icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <!-- Main page -->
-  <div class="main">
-    <h1 class="header">What I'm working on currently.</h1>
-    <div>
-      
+    <!-- Links to fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Links to stylesheets  -->
+    <link rel="stylesheet" href="../styles/universal.css" />
+    <link rel="stylesheet" href="../styles/projects.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <div class="nav-bar">
+      <div class="name-bar">
+        <h3><a href="./index.html">Timothy Makoni</a></h3>
+      </div>
+      <div class="list-items">
+        <ul>
+          <li class="nav-bar-list">
+            <a class="text-item" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-bar-list">
+            <a class="text-item" href="./about-me.html">About me</a>
+          </li>
+          <li class="nav-bar-list">
+            <a class="text-item" href="./contact-me.html">Contact me</a>
+          </li>
+          <li style="margin-left: 8px">
+            <a href="https://github.com/Tim-odm">
+              <i
+                class="fa fa-github"
+                style="font-size: 32px; border-radius: 50%"
+              ></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</body>
+
+    <!-- Main page -->
+    <div class="main">
+      <h1 class="header">Completed/Work in progress projects.</h1>
+
+      <!-- App Development using Kotltlin - Jetpack Compose -->
+      <div class="project-slice" id="one">
+        <div class="project-textbox">
+          <p class="project-header">
+            App Development using the Jetpack Compose Framework
+          </p>
+          <p class="project-description">
+            I am currently working through the Android development with Compose
+            course on the Android Developers website. The course features
+            extensive use of the Kotlin programming language, in particular,
+            making use of the Jetpack Compose framework for developing Android
+            applications. I am new to both Kotlin and App dev, so in taking this
+            course I hope to have a firm grasp of both. My main reason for
+            wanting to start app dev is so I can be better prepared for my
+            individual project in my final year of university.
+          </p>
+        </div>
+        <img class ="project-icon" src="../img/universal/android-studio.png" alt="" />
+      </div>
+
+      <!-- Second project slide  -->
+      <div class="project-slice" id="two">
+        <img class ="project-icon" id="odin-pic" src="../img/universal/odin-project.png" alt="" />
+        <div class="project-textbox">
+          <p class="project-header">
+            Full Stack Development
+          </p>
+          <p class="project-description">
+            I am currently working through the Android development with Compose
+            course on the Android Developers website. The course features
+            extensive use of the Kotlin programming language, in particular,
+            making use of the Jetpack Compose framework for developing Android
+            applications. I am new to both Kotlin and App dev, so in taking this
+            course I hope to have a firm grasp of both. My main reason for
+            wanting to start app dev is so I can be better prepared for my
+            individual project in my final year of university.
+          </p>
+        </div>
+      </div>
+
+      <!-- Third project slide  -->
+      <div class="project-slice" id="three">
+        <div class="project-textbox">
+          <p class="project-header">
+            Chess Application in Java
+          </p>
+          <p class="project-description">
+            I am currently working through the Android development with Compose
+            course on the Android Developers website. The course features
+            extensive use of the Kotlin programming language, in particular,
+            making use of the Jetpack Compose framework for developing Android
+            applications. I am new to both Kotlin and App dev, so in taking this
+            course I hope to have a firm grasp of both. My main reason for
+            wanting to start app dev is so I can be better prepared for my
+            individual project in my final year of university.
+          </p>
+        </div>
+        <img class ="project-icon" id="odin-pic" src="../img/universal/odin-project.png" alt="" />
+      </div>
+    </div>
+  </body>
 </html>

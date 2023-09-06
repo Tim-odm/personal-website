@@ -1,0 +1,49 @@
+.main {
+    margin-top: 80px;
+}
+
+.header {
+    text-align: center;
+}
+
+.project-slice {
+    display: flex;
+    padding: 60px 160px;
+    gap: 120px;
+}
+
+.project-slice#one {
+    background-color: rgba(27, 27, 37, 0.851);
+}
+
+.project-slice#two {
+    background-color: rgba(26, 31, 41, 0.851);
+}
+
+.project-slice#three {
+    background-color: rgba(36, 28, 41, 0.851);
+}
+
+.project-textbox {
+
+}
+
+.project-icon {
+    width: 500px;
+}
+
+#odin-pic {
+    border-radius: 50%;
+}
+
+.project-header {
+    font-size: 32px;
+    margin: 24px 0;
+    font-weight: 700;
+
+}
+
+.project-description {
+    margin: 0;
+    line-height: 24px;
+}
