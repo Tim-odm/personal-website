@@ -6,11 +6,11 @@
 
 body {
   margin: 0px;
-  background-color: rgb(23, 23, 28);
+  background-color: #080708;
 }
 
 .nav-bar {
-  background-color: rgb(54, 53, 60);
+  background-color: #14213d;
   height: 70px;
   border-bottom: 1px solid white;
   padding: 0 100px 0 32px;
@@ -50,6 +50,6 @@ body {
 }
 
 .nav-bar .list-items .text-item:hover {
-  background-color: black;
+  background-color: #04080f;
   transition: .5s;
 }
