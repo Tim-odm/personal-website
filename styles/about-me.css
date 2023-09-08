@@ -1,8 +1,128 @@
 .main {
     margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    padding: 0 160px;
+    padding-top: 200px;
+}
+
+.left {
+    padding: 40px;
+    background-color: #1A1A1D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right {
+    padding: 40px;
+    background-color: aliceblue;
+    color: black;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.header {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.about-me-info {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.right * {
+    color: black;
+}
+
+.right .header {
+    color: #3500D3;
 }
 
 .left img {
-    width: 500px;
+    margin-top: -200px;
+    width: 300px;
+    border: 2px solid aliceblue;
+    padding: 8px;
     border-radius: 50%;
+}
+
+.left .about-me-info {
+    text-align: center;
+}
+
+.right a {
+    text-decoration: none;
+    padding: 8px 12px;
+    align-self: center;
+    font-weight: 700;
+    font-size: 18px;
+    width: 150px;
+    height: 50px;
+    background-color: aliceblue;
+    border: 4px solid #3500D3;
+    border-radius: 25px;
+    transition: .3s;
+}
+
+.right a:hover {
+    background-color: #3500D3;
+    color: aliceblue;
+    transition: .3s;
+}
+
+.technologies-box {
+    padding: 40px 200px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 200px;
+    align-items: center;
+}
+
+.tech-panels {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 200px;
+}
+
+.tech-panels .panel {
+    background-color: #1A1A1D;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    width : 140px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 12px;
+    transition: .3s;
+}
+
+.tech-panels .panel:hover {
+    box-shadow: 2px 2px 16px 8px whitesmoke;
+    transition: .3s;
+  }
+
+.tech-panels .panel i {
+    font-size: 28px;
+}
+
+.tech-panels .panel p {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tech-panels .panel .sql-text {
+    margin-top: 20px;
+}
+
+.tech-panels .panel .fa-java {
+    font-size: 40px;
 }
