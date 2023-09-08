@@ -53,3 +53,16 @@ body {
   background-color: #3500D3;
   transition: .5s;
 }
+
+.footer {
+  margin-top: 80px;
+  padding-top: 12px;
+  height: 120px;
+  background-color: black;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 16px;
+  color: rgb(183, 188, 193);
+}
