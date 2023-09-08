@@ -1,67 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/817d3bca73.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Icon  -->
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;1,9..40,400;1,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Fonts  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;1,9..40,400;1,9..40,700&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets  -->
+    <link rel="stylesheet" href="../styles/universal.css" />
+    <link rel="stylesheet" href="../styles/about-me.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <div class="nav-bar">
+      <div class="name-bar">
+        <h3><a href="./index.html">Timothy Makoni</a></h3>
+      </div>
+      <div class="list-items">
+        <ul>
+          <li class="nav-bar-list">
+            <a class="text-item" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-bar-list">
+            <a class="text-item" href="./about-me.html">About me</a>
+          </li>
+          <li class="nav-bar-list">
+            <a class="text-item" href="./contact-me.html">Contact me</a>
+          </li>
+          <li style="margin-left: 8px">
+            <a href="https://github.com/Tim-odm">
+              <i
+                class="fa fa-github"
+                style="font-size: 32px; border-radius: 50%"
+              ></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-  <!-- Stylesheets  -->
-  <link rel="stylesheet" href="../styles/universal.css">
-  <link rel="stylesheet" href="../styles/about-me.css">
-  <title>Home Page</title>
-</head>
-<body>
-  
-  <!-- Navigation bar -->
-  <div class="nav-bar">
-    <div class="name-bar">
-      <h3><a href="./index.html">Timothy Makoni</a></h3>
+    <!-- Main page -->
+    <div class="main">
+      <div class="left">
+        <img src="../img/universal/IMG_0709.JPG" alt="" />
+        <p>Who am I?</p>
+        <p>
+          My name is Timothy Makoni. I'm a second-year Computer Science student
+          at Swansea University and an aspiring software developer. Coming into
+          higher education, I wasn't sure if CS was for me, but after my first
+          year, I fell in love with the subject. If I'm not working on a project
+          or learning a new technology, I'm probably browsing the latest news on
+          tech updates. Outside of coding, I enjoy reading and playing chess.
+        </p>
+      </div>
+      <div class="right">
+        <p>About my Work...</p>
+        <p>
+          My first year of university was mainly focused on learning to code in
+          Java. In my second semester, we touched more on Object Oriented
+          Programming and data structures such as Linked Lists, Stacks, Queues
+          and Binary Trees. Again in the second semester, we had a module called
+          'Introduction to Data Science' in which we covered the basics of
+          Jupyter Notebooks and the related software used in the data science
+          process.
+        </p>
+        <p>
+          Outside of university, I've worked on web development, learning to
+          create basic web pages. In addition to this, I've done some work with
+          the relational database management system MySQL. Below you can find a
+          list of all the technologies/software I am familiar with.
+        </p>
+        <div class="tech-panels">
+          <div class="panel">
+            <i class="fa-brands fa-java" style="font-size: 24px"></i>
+            <p class="tech-text">Java</p>
+          </div>
+          <div class="panel">
+            <i class="fa-solid fa-database" style="font-size: 24px"></i>
+            <p class="tech-text">MySQL</p>
+          </div>
+          <div class="panel">
+            <i class="fa-brands fa-git" style="font-size: 24px"></i>
+            <p class="tech-text">Git and GitHub</p>
+          </div>
+          <div class="panel">
+            <i class="fa-brands fa-python" style="font-size: 24px"></i>
+            <p class="tech-text">Python/Data Science</p>
+          </div>
+          <div class="panel">
+            <i class="fa-brands fa-android"></i>
+            <p class="tech-text">Kotlin for Android</p>
+          </div>
+        </div>
+        <button>Contact me</button>
+      </div>
     </div>
-    <div class="list-items">
-      <ul>
-        <li class="nav-bar-list"><a class="text-item" href="./projects.html">Projects</a></li>
-        <li class="nav-bar-list"><a class="text-item" href="./about-me.html">About me</a></li>
-        <li class="nav-bar-list"><a class="text-item" href="./contact-me.html">Contact me</a></li>
-        <li style="margin-left: 8px;">
-          <a href="https://github.com/Tim-odm">
-            <i class="fa fa-github" style="font-size: 32px; border-radius: 50%;"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Main page -->
-  <div class="main">
-    <div class="left">
-      <img src="../img/universal/IMG_0709.JPG" alt="">
-      <p>
-        Who am I?
-      </p>
-      <p>
-        My name is Timothy Makoni. I'm a second-year Computer Science student at Swansea University and an aspiring software developer. Coming into higher education, I wasn't sure if CS was for me, but after my first year, I fell in love with the subject. If I'm not working on a project or learning a new technology, I'm probably browsing the latest news on tech updates. Outside of coding, I enjoy reading and playing chess. 
-      </p>
-    </div>
-    <div class="right">
-      <p>
-        About my Work...
-      </p>
-      <p>
-        My first year of university was mainly focused on learning to code in Java. In my second semester, we touched more on Object Oriented Programming and data structures such as Linked Lists, Stacks, Queues and Binary Trees. Again in the second semester, we had a module called 'Introduction to Data Science' in which we covered the basics of Jupyter Notebooks and the related software used in the data science process.
-      </p>
-      <p>
-        Outside of university, I've worked on web development, learning to create basic web pages. In addition to this, I've done some work with the relation database management system MySQL. Below you can find a list of all the technologies/software I am familiar with.
-      </p>
-      <button>Contact me</button>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
