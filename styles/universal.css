@@ -6,14 +6,14 @@
 
 body {
   margin: 0px;
-  background-color: #080708;
+  background-color: #3500D3;
 }
 
 .nav-bar {
-  background-color: #14213d;
-  height: 70px;
+  background-color: #1A1A1D;
+  height: 80px;
   border-bottom: 1px solid white;
-  padding: 0 100px 0 32px;
+  padding: 0 120px 0 120px;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -50,6 +50,6 @@ body {
 }
 
 .nav-bar .list-items .text-item:hover {
-  background-color: #04080f;
+  background-color: #3500D3;
   transition: .5s;
 }
