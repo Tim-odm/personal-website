@@ -9,22 +9,38 @@
 
 .project-slice {
     display: flex;
-    padding: 60px 160px;
-    gap: 120px;
+    padding: 60px 120px;
+    gap: 10px;
+    align-items: center;
+}
+
+.project-header {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 700;
+
+}
+
+.project-description {
+    margin: 20px 0 0 0;
+    line-height: 24px;
+}
+
+.project-slice #kotlin-code {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .project-slice#two {
     background-color: rgba(26, 31, 41, 0.851);
     border-top: 2px solid aliceblue;
+    gap: 32px;
 }
 
 .project-slice#three {
     background-color: rgba(36, 28, 41, 0.851);
     border-top: 2px solid aliceblue;
-}
-
-.project-icon {
-    width: 500px;
 }
 
 #odin-pic {
@@ -33,8 +49,8 @@
 
 .chess-pics {
     display: grid;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: repeat(3 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 #chess-code {
@@ -42,24 +58,19 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
- #chess-app {
+
+#chess-app {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
-    grid-row-end: 3;
- }
-
-.project-header {
-    font-size: 32px;
-    margin: 24px 0;
-    font-weight: 700;
-
-}
-
-.project-description {
-    margin: 0;
-    line-height: 24px;
+    grid-row-end: 4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .footer {
