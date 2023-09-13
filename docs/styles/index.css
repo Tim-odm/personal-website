@@ -14,13 +14,13 @@
 
 .main .panel {
   width: 370px;
-  height: 650px;
   padding: 8px 20px;
   background-color: #1A1A1D;
   border: 2px solid whitesmoke;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   box-shadow: 2px 2px 16px 4px #1A1A1D;
   transition: .5s;
 }
@@ -30,10 +30,6 @@
   transition: .5s;
 }
 
-.main .panel h3 {
-  align-self: center;
-}
-
 .main .panel p {
   text-align: justify;
 }
@@ -41,11 +37,11 @@
 .main .panel a,.main .panel em {
   text-decoration: none;
   color: gray;
+  align-self: flex-start;
 }
 
 .main .panel img {
   margin-top: 28px;
-  width: 300px;
-  height: 200px;
-  align-self: center;
+  width: 100%;
+  object-fit: cover;
 }
