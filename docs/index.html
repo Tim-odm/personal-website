@@ -1,85 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Link to github icon -->
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <head>
+    <!-- Link to icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
-  <!-- Links to google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;1,9..40,400;1,9..40,700&display=swap" rel="stylesheet">
+    <!-- Links to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;1,9..40,400;1,9..40,700&display=swap"
+      rel="stylesheet"
+    />
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Links to style sheets -->
-  <link rel="stylesheet" href="./styles/universal.css">
-  <link rel="stylesheet" href="./styles/index.css">
-  <title>Home</title>
-</head>
-<body>
-  
-  <!-- Navigation bar -->
-  <div class="nav-bar">
-    <div class="name-bar">
-      <h3><a href="./index.html">Timothy Makoni</a></h3>
-    </div>
-    <div class="list-items">
-      <ul>
-        <li class="nav-bar-list"><a class="text-item" href="./projects.html">Projects</a></li>
-        <li class="nav-bar-list"><a class="text-item" href="./about-me.html">About me</a></li>
-        <li class="nav-bar-list"><a class="text-item" href="./contact-me.html">Contact me</a></li>
-        <li style="margin-left: 8px;">
-          <a href="https://github.com/Tim-odm" target="_blank">
-            <i class="fa fa-github" style="font-size: 32px; border-radius: 50%;"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+    <!-- Link to scripts -->
+    <script src="./scripts/universal.js"></script>
 
-  <!-- Main page -->
-  <div class="main">
-    <h1 class="header">Featured Projects</h1>
-    <div class="projects-panel">
-
-      <!-- panel 1 -->
-      <div class="panel">
-        <h3>App Dev with Kotlin</h3>
-        <p>
-          I am currently working through the Android development with Compose course on the Android Developers website. The course features extensive use of the Kotlin programming language, in particular, making use of the Jetpack Compose framework for developing Android applications. I am new to both Kotlin and App dev, so in taking this course I hope to have a firm grasp of both.
-        </p>
-        <a class="read-more-prompt" href="./projects.html"><em>Read More...</em></a>
-        <img src="./img/android-studio.png" alt="An image showing the code of simple app written in Kotlin.">
+    <!-- Links to style sheets -->
+    <link rel="stylesheet" href="./styles/universal.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <div class="nav-bar" id="nav-bar">
+      <div class="name-bar">
+        <h3><a href="./index.html">Timothy Makoni</a></h3>
       </div>
-
-      <!-- panel 2 -->
-      <div class="panel">
-        <h3>The Odin Project</h3>
-        <p>
-          I've decided to compile all my projects from TOP into one here. Working through the fundamentals section of The Odin Project has helped me form my basic knowledge of front-end development. I've worked with HTML CSS and JS. In the next section of this course, I will be learning to use Node.js on the backend to manage websites.
-        </p>
-        <a class="read-more-prompt" href="./projects.html"><em>Read More...</em></a>
-        <img src="./img/web-dev-code.png" alt="An image of HTML and CSS code for a website.">
+      <div class="vertical-menu-icon">
+        <a href="javascript:void(0);" onclick="dropDown()" class="menu-icon">
+          <span class="material-symbols-outlined">menu</span>
+        </a>
       </div>
-
-      <!-- panel 3 -->
-      <div class="panel">
-        <h3>Java Chess App</h3>
-        <p>
-          A simple chess application in Java built completely from scratch. This project makes use of the JavaFX library to draw the chess objects onto the screen and plain old core Java to handle the logic. A very insightful project that helped strengthen my understanding of the Java programming language.
-        </p>
-        <a class="read-more-prompt" href="./projects.html"><em>Read More...</em></a>
-        <img src="./img/chess-code.png" alt="An image showing the code of a chess application written in Java.">
+      <div class="vertical-menu hide" id="vertical-menu">
+        <div class="menu-content">
+          <ul class="menu-content-list">
+            <li class="vertical-menu-list-item active">
+              <a href="./index.html">Home</a>
+              </li>
+              <li class="vertical-menu-list-item">
+              <a class="text-item" href="./projects.html">Projects</a>
+            </li>
+            <li class="vertical-menu-list-item">
+              <a class="text-item" href="./about-me.html">About me</a>
+            </li>
+            <li class="vertical-menu-list-item">
+              <a class="text-item" href="./contact-me.html">Contact me</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      
+      <div class="horizontal-menu">
+        <ul class="horizontal-list">
+          <li class="horizontal-list-item">
+            <a class="text-item" href="./projects.html">Projects</a>
+          </li>
+          <li class="horizontal-list-item">
+            <a class="text-item" href="./about-me.html">About me</a>
+          </li>
+          <li class="horizontal-list-item">
+            <a class="text-item" href="./contact-me.html">Contact me</a>
+          </li>
+          <li style="margin-left: 8px">
+            <a href="https://github.com/Tim-odm" target="_blank">
+              <i
+                class="fa fa-github"
+                style="font-size: 32px; border-radius: 50%"
+              ></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <div class="footer">
-    <p>Timothy Makoni &copy 2023</p>
-    <p>Thank you for visiting my website.</p>
-  </div>
-</body>
+    <!-- Main page -->
+    <div class="main">
+      <h1 class="header">Featured Projects</h1>
+      <div class="projects-panel">
+        <!-- panel 1 -->
+        <div class="panel">
+          <h3>App Dev with Kotlin</h3>
+          <p>
+            I am currently working through the Android development with Compose
+            course on the Android Developers website. The course features
+            extensive use of the Kotlin programming language, in particular,
+            making use of the Jetpack Compose framework for developing Android
+            applications. I am new to both Kotlin and App dev, so in taking this
+            course I hope to have a firm grasp of both.
+          </p>
+          <a class="read-more-prompt" href="./projects.html"
+            ><em>Read More...</em></a
+          >
+          <img
+            src="./img/android-studio.png"
+            alt="An image showing the code of simple app written in Kotlin."
+          />
+        </div>
+
+        <!-- panel 2 -->
+        <div class="panel">
+          <h3>The Odin Project</h3>
+          <p>
+            I've decided to compile all my projects from TOP into one here.
+            Working through the fundamentals section of The Odin Project has
+            helped me form my basic knowledge of front-end development. I've
+            worked with HTML CSS and JS. In the next section of this course, I
+            will be learning to use Node.js on the backend to manage websites.
+          </p>
+          <a class="read-more-prompt" href="./projects.html"
+            ><em>Read More...</em></a
+          >
+          <img
+            src="./img/web-dev-code.png"
+            alt="An image of HTML and CSS code for a website."
+          />
+        </div>
+
+        <!-- panel 3 -->
+        <div class="panel">
+          <h3>Java Chess App</h3>
+          <p>
+            A simple chess application in Java built completely from scratch.
+            This project makes use of the JavaFX library to draw the chess
+            objects onto the screen and plain old core Java to handle the logic.
+            A very insightful project that helped strengthen my understanding of
+            the Java programming language.
+          </p>
+          <a class="read-more-prompt" href="./projects.html"
+            ><em>Read More...</em></a
+          >
+          <img
+            src="./img/chess-code.png"
+            alt="An image showing the code of a chess application written in Java."
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Timothy Makoni &copy 2023</p>
+      <p>Thank you for visiting my website.</p>
+    </div>
+  </body>
 </html>

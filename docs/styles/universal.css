@@ -9,11 +9,19 @@ body {
   background-color: #3500D3;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 .nav-bar {
   background-color: #1A1A1D;
-  height: 80px;
+  height: 5em;
   border-bottom: 1px solid white;
-  padding: 0 120px 0 120px;
+  padding: 0 4em;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -21,37 +29,105 @@ body {
   width: 100%;
 }
 
-.nav-bar div {
-  display: flex;
-  align-items: center;
-}
-
 .nav-bar a {
   text-decoration: none;
-}
-
-.nav-bar .name-bar h3 {
-  font-size: 22px;
 }
 
 .nav-bar ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
-.nav-bar .list-items .text-item {
+.nav-bar .name-bar h3 {
+  font-size: 1.6em;
+}
+
+/* Don't display menu by default */
+.nav-bar .vertical-menu-icon {
+  display: none;
+}
+
+.nav-bar .vertical-menu {
+  display: none;
+}
+
+.nav-bar .horizontal-menu {
+  align-self: center;
+}
+
+.nav-bar .horizontal-list {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.nav-bar .horizontal-menu .horizontal-list .text-item {
   border-radius: 24px;
   font-size: 18px;
   padding: 12px 24px;
 }
 
-.nav-bar .list-items .text-item:hover {
+.nav-bar .horizontal-menu .horizontal-list .text-item:hover {
   background-color: #3500D3;
   transition: .5s;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 820px) {
+  .nav-bar .horizontal-menu {
+    display: none;
+  }
+
+  .nav-bar {
+    padding: 0 2em;
+  }
+
+  .nav-bar .vertical-menu-icon {
+    display: flex;
+    align-self: center;
+  }
+
+  .nav-bar .vertical-menu.show {
+    background-color: #1A1A1D;
+    position: fixed;
+    inset: 0 0 0 55%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    align-items: start;
+  }
+
+  .nav-bar .vertical-menu.hide {
+    display: none;
+  }
+
+  .menu-content {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .menu-content ul {
+    padding: 0 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+  }
+
+  .menu-content ul .active {
+    background-color: #3500D3;
+    border-radius: 8px;
+  }
+
+  .menu-content ul li {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .menu-content-list ul li a {
+    width: 100%;
+  }
 }
 
 .footer {
