@@ -1,18 +1,18 @@
 * {
   color: aliceblue;
-  font-family: 'DM Sans', Sans-serif;
+  font-family: 'Montserrat', Sans-serif;
   box-sizing: border-box;
 }
 
 body {
   margin: 0px;
-  background-color: #3500D3;
+  background-color: #627b9c;
 }
 
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
-  'wght' 400,
+  'wght' 200,
   'GRAD' 0,
   'opsz' 24
 }
@@ -27,6 +27,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  letter-spacing: 1px;
 }
 
 .nav-bar a {
@@ -41,6 +42,7 @@ body {
 
 .nav-bar .name-bar h3 {
   font-size: 1.6em;
+  font-weight: 500;
 }
 
 /* Don't display menu by default */
@@ -69,7 +71,7 @@ body {
 }
 
 .nav-bar .horizontal-menu .horizontal-list .text-item:hover {
-  background-color: #3500D3;
+  background-color: #627b9c;
   transition: .5s;
 }
 
@@ -135,9 +137,12 @@ body {
   padding-top: 12px;
   height: 120px;
   background-color: black;
+  display: flex;
+  justify-content: center;
 }
 
 .footer p {
+  margin: auto;
   text-align: center;
   font-size: 16px;
   color: rgb(183, 188, 193);

@@ -45,3 +45,9 @@
   width: 100%;
   object-fit: cover;
 }
+
+.header {
+  letter-spacing: 4px;
+  font-size: 46px;
+  font-weight: 500;
+}
